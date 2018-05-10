@@ -1,4 +1,4 @@
-package com.effectiveJava.core.charcter02;
+package main.com.effectiveJava.charcter02;
 
 /**
  * Description:A bulider for objects of type T

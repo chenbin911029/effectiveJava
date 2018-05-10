@@ -1,4 +1,4 @@
-package com.effectiveJava.core;
+package main;
 
 /**
  * Description:
