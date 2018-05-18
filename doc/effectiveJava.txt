@@ -7,3 +7,6 @@ String s = new String("stringette");//don't do this.
 //改进后
 String s = "stringette";
 
+6.消除过期的对象引用
+2018-05-17
+
