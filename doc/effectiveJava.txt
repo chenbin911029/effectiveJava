@@ -20,3 +20,51 @@ BigDecimal(1.00) BigDecimal(1.0)
 
 第四章 类和接口
 13.使类和成员的可访问性最小化
+14.在共有类中使用访问方法而非公有域
+22.优先考虑静态成员类
+第五章 泛型
+23.请不要再新代码中使用原生态类型
+泛型，安全机制，把运行时的异常提前到了编译时检查。
+无限制通配符 List<?>
+if (o instanceof Set) {
+    Set<?> m = (Set<?>)o;
+}
+24.消除非受检警告
+禁止非受检告警，范围设到最小。
+使用SuppressWarnings("unchecked")注解时，都要添加一条注释，说明为什么这样做是安全的。
+25.列表优先于数组
+//fails at runtime
+Object[] objectArray = new Long[1];
+objectArray[0] = "not fit";
+
+//won't compile
+List<Object> o1 = new ArrayList<Long>();
+o1.add("not fit");
+
+26.优先考虑泛型
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
