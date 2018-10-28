@@ -42,6 +42,16 @@ List<Object> o1 = new ArrayList<Long>();
 o1.add("not fit");
 
 26.优先考虑泛型
+27.优先考虑泛型方法
+28.利用有限制通配符来提升API的灵活性
+通配符类型
+producer-extends,consumer-super(PECS),所有的comparable和comparator都是消费者
+29.优先考虑类型安全的异构容器
+
+
+
+
+
 
 
 

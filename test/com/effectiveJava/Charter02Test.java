@@ -1,4 +1,4 @@
-package test.com.effectiveJava.charcter02;
+package com.effectiveJava;
 
 import main.com.effectiveJava.charcter02.SingletonC;
 import org.junit.Test;
