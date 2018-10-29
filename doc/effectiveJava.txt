@@ -47,6 +47,13 @@ o1.add("not fit");
 通配符类型
 producer-extends,consumer-super(PECS),所有的comparable和comparator都是消费者
 29.优先考虑类型安全的异构容器
+第六章
+枚举和注解
+30.用enum来代替int常量
+
+
+
+
 
 
 
