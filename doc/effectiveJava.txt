@@ -56,6 +56,11 @@ producer-extends,consumer-super(PECS),所有的comparable和comparator都是消�
 35.注解优先于命名模式
 36.坚持使用Override注解
 37.用标记接口定义类型
+41.慎用重载
+安全保守的策略：永远不要导出两个具有相同参数数目的重载方法。
+42.慎用可变参数
+43.返回零长度的数组或者集合，而不是null
+
 
 
 
