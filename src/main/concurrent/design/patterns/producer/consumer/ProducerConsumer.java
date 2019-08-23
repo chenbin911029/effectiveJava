@@ -11,6 +11,11 @@ public class ProducerConsumer {
         Consumer c = new Consumer(ss);
 
         new Thread(p).start();
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new Thread(c).start();
     }
 }
