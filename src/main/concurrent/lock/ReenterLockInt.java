@@ -5,6 +5,7 @@ import main.concurrent.lock.deadlock.DeadlockChecker;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 死锁案例，以及死锁检测解决（中断死锁线程）
  * Created by chenbin on 2019\8\16 0016.
  */
 public class ReenterLockInt implements Runnable {

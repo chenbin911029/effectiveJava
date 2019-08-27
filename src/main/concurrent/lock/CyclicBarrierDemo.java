@@ -4,9 +4,11 @@ import java.util.Random;
 import java.util.concurrent.*;
 
 /**
+ * 循环栅栏
  * Created by chenbin on 2019\8\16 0016.
  */
 public class CyclicBarrierDemo {
+    //每个线程的任务
     public static class Soldier implements Runnable {
         private String soldier;
         private final CyclicBarrier cyclicBarrier;
@@ -43,6 +45,7 @@ public class CyclicBarrierDemo {
         }
     }
 
+    //栅栏位满后需要执行的动作
     public static class BarrierRun implements Runnable {
         boolean flag;
         int N;

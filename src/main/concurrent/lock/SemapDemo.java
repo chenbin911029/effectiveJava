@@ -5,6 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
 /**
+ *
  * Created by chenbin on 2019\8\16 0016.
  */
 public class SemapDemo implements Runnable {

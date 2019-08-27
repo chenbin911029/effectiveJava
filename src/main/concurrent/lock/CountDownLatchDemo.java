@@ -6,6 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
+ * 倒数计时器
  * Created by chenbin on 2019\8\16 0016.
  */
 public class CountDownLatchDemo implements Runnable {
