@@ -12,7 +12,11 @@ public class Application {
         //这里可以使用sleep代替对其它业务逻辑的处理
         //在其它业务逻辑处理的过程中，RealData也正在创建，从而充分利用等待时间
         Thread.sleep(2000);
-        //使用真实数据
+        /**
+         * getResult()方法会一直被阻塞直到setRealData()被调用才会重新唤醒getResult();
+         * 然后返回结果。
+         */
+
         System.out.println("返回的真实数据="+data.getResult());
     }
 }

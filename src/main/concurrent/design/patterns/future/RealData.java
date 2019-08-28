@@ -1,6 +1,7 @@
 package main.concurrent.design.patterns.future;
 
 /**
+ * 异步线程调用这个方法，计算获取真实的结果
  * Created by chenbin on 2019\8\21 0021.
  */
 public class RealData implements Data {
