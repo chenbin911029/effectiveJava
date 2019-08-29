@@ -7,11 +7,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 未使用ThreadLocal,锁，并发控制，多个线程访问共享数据
+ * 使用ThreadLocal,每个线程都有自己的SimpleDateFormat实例
  * Created by chenbin on 2019\8\22 0022.
  */
 public class ThreadLocal2 {
-    //SimpleDateFormat 被多线程访问
     private static ThreadLocal<SimpleDateFormat> tl = new ThreadLocal<SimpleDateFormat>();
 
     public static class ParseDate implements Runnable {

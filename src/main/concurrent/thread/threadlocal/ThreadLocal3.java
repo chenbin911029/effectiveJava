@@ -1,7 +1,7 @@
 package main.concurrent.thread.threadlocal;
 
 /**
- * 未使用ThreadLocal,锁，并发控制，多个线程访问共享数据
+ *
  * Created by chenbin on 2019\8\22 0022.
  */
 public class ThreadLocal3 {

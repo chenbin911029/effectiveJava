@@ -3,6 +3,8 @@ package main.concurrent.design.patterns.jdk.future;
 import java.util.concurrent.Callable;
 
 /**
+ * future模式另起线程调用执行这个任务，
+ * 这个任务计算自己定制的业务逻辑。
  * Created by chenbin on 2019\8\21 0021.
  */
 public class RealData implements Callable<String> {
