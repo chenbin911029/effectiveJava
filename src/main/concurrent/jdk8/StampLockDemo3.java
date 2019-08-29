@@ -2,6 +2,10 @@ package main.concurrent.jdk8;
 
 import java.util.concurrent.locks.StampedLock;
 
+/**
+ * StampedLock
+ * 乐观读
+ */
 public class StampLockDemo3 {
 
     private int balance;
@@ -11,6 +15,10 @@ public class StampLockDemo3 {
         balance=10;
     }
 
+    /**
+     * 读的时候不阻塞写，乐观读
+     * 通过判断 时间戳 来判断是否需要重读（其它线程对变量做了写操作的情况下，时间戳会发生改变）
+     */
     public void optimisticRead() {
         long stamp = lock.tryOptimisticRead();
         int c = balance;
@@ -29,6 +37,10 @@ public class StampLockDemo3 {
         System.out.println("读取的值为:"+c);
     }
 
+    /**
+     * 写操作会获取写锁
+     * @param value
+     */
     public void write(int value) {
         long stamp = lock.writeLock();
         balance += value;
